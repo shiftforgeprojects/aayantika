@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aayantika Choudhury | Independent Director &amp; SaaS Operations Leader</title>
+<meta name="description" content="Aayantika Choudhury — Aspiring Independent Director with 22 years across SaaS operations, customer growth, and responsible AI governance.">
+<style>
+  :root{
+    --navy:#0b1f3a;
+    --navy-deep:#081527;
+    --ink:#1a2436;
+    --paper:#f7f8fa;
+    --card:#ffffff;
+    --line:#e4e7ec;
+    --muted:#5b6472;
+    --accent:#b3862c;
+    --accent-soft:#f3e6cd;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  section{padding:88px 24px;}
+  .wrap{max-width:1080px;margin:0 auto;}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.25;}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;
+    color:var(--accent);font-weight:600;margin-bottom:10px;display:block;
+  }
+  .section-title{font-size:1.9rem;color:var(--navy);margin-bottom:14px;}
+  .section-lead{color:var(--muted);max-width:640px;margin-bottom:44px;font-size:1.02rem;}
+
+  /* Nav */
+  nav{
+    position:sticky;top:0;z-index:100;background:rgba(8,21,39,.96);
+    backdrop-filter:blur(6px);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:1080px;
+  }
+  .brand{color:#fff;font-family:Georgia,serif;font-size:1.05rem;letter-spacing:.02em;}
+  .navlinks{display:flex;gap:28px;flex-wrap:wrap;}
+  .navlinks a{color:#cbd3e0;font-size:.88rem;letter-spacing:.02em;transition:color .2s;}
+  .navlinks a:hover{color:#fff;}
+  .navtoggle{display:none;background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer;}
+
+  /* Hero */
+  .hero{
+    background:linear-gradient(155deg,var(--navy-deep),var(--navy) 60%);
+    color:#fff;padding:76px 24px 96px;
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.3fr .9fr;gap:56px;align-items:center;
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(179,134,44,.16);border:1px solid rgba(179,134,44,.4);
+    color:var(--accent-soft);padding:7px 16px;border-radius:999px;
+    font-size:.78rem;letter-spacing:.04em;margin-bottom:22px;
+  }
+  .hero h1{font-size:2.5rem;color:#fff;margin-bottom:16px;}
+  .hero .role{font-size:1.15rem;color:#d8deeb;margin-bottom:10px;font-weight:500;}
+  .hero .creds{color:#98a3ba;font-size:.92rem;margin-bottom:28px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    padding:13px 26px;border-radius:6px;font-size:.92rem;font-weight:600;
+    letter-spacing:.01em;display:inline-block;transition:transform .15s, background .2s;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#c99934;transform:translateY(-1px);}
+  .btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);}
+  .hero-photo{
+    width:280px;height:280px;border-radius:50%;overflow:hidden;
+    border:4px solid rgba(179,134,44,.5);margin:0 auto;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;}
+
+  /* Stats */
+  .stats{background:var(--navy-deep);padding:0 24px 64px;}
+  .stats .wrap{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+    border-top:1px solid rgba(255,255,255,.12);padding-top:48px;
+  }
+  .stat{text-align:center;color:#fff;}
+  .stat .num{font-family:Georgia,serif;font-size:2.1rem;color:var(--accent-soft);}
+  .stat .label{font-size:.82rem;color:#9aa4ba;margin-top:4px;}
+
+  /* About */
+  .about .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;}
+  .about p{color:#3b4453;margin-bottom:16px;}
+  .quote{
+    border-left:3px solid var(--accent);padding:18px 22px;margin:26px 0;
+    background:#fdf8ee;color:#4a4033;font-style:italic;font-size:.98rem;
+  }
+  .badges{display:flex;flex-direction:column;gap:16px;}
+  .credential-card{
+    background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px;display:flex;gap:14px;align-items:flex-start;
+  }
+  .credential-card .icon{font-size:1.3rem;}
+  .credential-card h4{font-size:.96rem;color:var(--navy);margin-bottom:3px;}
+  .credential-card p{font-size:.84rem;color:var(--muted);margin:0;}
+
+  /* Competencies */
+  .competencies{background:var(--card);}
+  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .comp-card{
+    border:1px solid var(--line);border-radius:12px;padding:26px 24px;
+    background:var(--paper);transition:border-color .2s,transform .2s;
+  }
+  .comp-card:hover{border-color:var(--accent);transform:translateY(-3px);}
+  .comp-card .icon{font-size:1.5rem;margin-bottom:12px;}
+  .comp-card h3{font-size:1.02rem;color:var(--navy);margin-bottom:8px;}
+  .comp-card p{font-size:.88rem;color:var(--muted);}
+
+  /* Timeline */
+  .timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:38px;}
+  .tl-item{position:relative;padding-bottom:44px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:'';position:absolute;left:-44px;top:4px;
+    width:12px;height:12px;border-radius:50%;background:var(--accent);
+    border:3px solid var(--paper);box-shadow:0 0 0 2px var(--accent);
+  }
+  .tl-dates{font-size:.8rem;color:var(--accent);font-weight:600;letter-spacing:.03em;margin-bottom:4px;}
+  .tl-item h3{font-size:1.12rem;color:var(--navy);margin-bottom:2px;}
+  .tl-item .org{font-size:.9rem;color:var(--muted);margin-bottom:10px;}
+  .tl-item ul{padding-left:18px;color:#3b4453;font-size:.92rem;}
+  .tl-item li{margin-bottom:5px;}
+
+  /* Board value */
+  .boardvalue{background:var(--navy-deep);color:#fff;}
+  .boardvalue .section-title, .boardvalue .eyebrow{color:#fff;}
+  .boardvalue .eyebrow{color:var(--accent-soft);}
+  .boardvalue .section-lead{color:#aab2c4;}
+  .bv-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .bv-col h3{color:var(--accent-soft);font-size:1rem;margin-bottom:16px;letter-spacing:.02em;}
+  .tag-row{display:flex;flex-wrap:wrap;gap:10px;}
+  .tag{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+    padding:8px 14px;border-radius:999px;font-size:.82rem;color:#dbe1ee;
+  }
+  .questions{list-style:none;margin-top:6px;}
+  .questions li{
+    padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);
+    font-size:.94rem;color:#dbe1ee;position:relative;padding-left:22px;
+  }
+  .questions li::before{content:'—';position:absolute;left:0;color:var(--accent);}
+
+  /* Recognition */
+  .recognition-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .rec-card{
+    background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:22px;display:flex;gap:16px;
+  }
+  .rec-card .icon{font-size:1.4rem;}
+  .rec-card h4{font-size:.98rem;color:var(--navy);margin-bottom:4px;}
+  .rec-card p{font-size:.87rem;color:var(--muted);}
+
+  /* Education */
+  .edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .edu-card{
+    background:var(--paper);border-top:3px solid var(--accent);border-radius:6px;
+    padding:20px;
+  }
+  .edu-card h4{font-size:.95rem;color:var(--navy);margin-bottom:6px;}
+  .edu-card p{font-size:.84rem;color:var(--muted);}
+
+  /* Contact */
+  .contact{background:var(--card);text-align:center;}
+  .contact .section-lead{margin-left:auto;margin-right:auto;}
+  .contact-row{
+    display:flex;justify-content:center;gap:36px;flex-wrap:wrap;margin-top:10px;
+  }
+  .contact-item{text-align:left;}
+  .contact-item .icon{font-size:1.1rem;margin-right:8px;}
+  .contact-item a{font-size:.98rem;color:var(--navy);font-weight:600;}
+  .contact-item a:hover{color:var(--accent);}
+  .contact-item .k{display:block;font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px;}
+
+  footer{
+    background:var(--navy-deep);color:#8a93a8;text-align:center;
+    padding:32px 24px;font-size:.82rem;
+  }
+
+  @media (max-width: 860px){
+    .navlinks{display:none;}
+    .navtoggle{display:block;}
+    .hero .wrap{grid-template-columns:1fr;text-align:center;}
+    .hero-photo{order:-1;width:200px;height:200px;}
+    .cta-row{justify-content:center;}
+    .stats .wrap{grid-template-columns:repeat(2,1fr);}
+    .about .wrap{grid-template-columns:1fr;}
+    .comp-grid{grid-template-columns:1fr;}
+    .bv-grid{grid-template-columns:1fr;}
+    .recognition-grid{grid-template-columns:1fr;}
+    .edu-grid{grid-template-columns:1fr;}
+    section{padding:64px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Aayantika Choudhury</div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#board-value">Board Value</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Connect</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="badge">🎓 IICA Certified Independent Director</span>
+      <h1>Aayantika Choudhury</h1>
+      <div class="role">Aspiring Independent Director — SaaS Operations &amp; Responsible AI Governance</div>
+      <div class="creds">IICA Independent Director Proficiency (Qualified) &nbsp;·&nbsp; B.E. Computer Science &nbsp;·&nbsp; PGDHRM &nbsp;·&nbsp; 22+ Years in Enterprise SaaS &amp; Technology Operations</div>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Connect With Me</a>
+        <a href="#experience" class="btn btn-ghost">View My Journey</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Aayantika Choudhury">
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="num">22+</div><div class="label">Years in SaaS &amp; Tech Ops</div></div>
+    <div class="stat"><div class="num">₹500Cr+</div><div class="label">ARR Book Governed</div></div>
+    <div class="stat"><div class="num">2,500+</div><div class="label">Enterprise Customers</div></div>
+    <div class="stat"><div class="num">90%+</div><div class="label">Retention &amp; SLA Delivered</div></div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Who I Am</span>
+      <h2 class="section-title">Governance Grounded in Operating Reality</h2>
+      <p>Every board faces a question that gets harder as technology moves faster: is the company's customer-facing tech actually working, or just reporting that it is? When retention slips, when a partner model fails under volume, when AI tools deployed in live operations create risk no one mapped beforehand — those problems reach the board too late.</p>
+      <p>Twenty-two years across SaaS, managed services, and enterprise technology provide that depth. At Sprinklr, a ₹500 crore-plus ARR product success book was governed across three geographies: retention moved from ~80% to 90%+ by diagnosing adoption gaps and rebuilding the delivery model. Sprinklr's first-ever outsourced support arrangement was designed and executed — a 100-person Cognizant partner team at 90%+ SLA by Q2. A 2,000-agent regulated BFSI deployment was run under user-governance and access controls a banking compliance team could stand behind.</p>
+      <div class="quote">"For a board, this means customer risk signals readable before they show in NRR, the difference between vendor governance that satisfies an audit and governance that actually holds, and the right questions about AI deployment asked and pressed."</div>
+      <p>The value on offer is oversight: accurate information to the board, the right questions raised, and decisions that protect the company's capacity to perform.</p>
+    </div>
+    <div class="badges">
+      <div class="credential-card">
+        <div class="icon">🎓</div>
+        <div><h4>IICA Independent Director Proficiency</h4><p>Ministry of Corporate Affairs — Qualified, July 2026. IICA Data Bank registered (Lifetime).</p></div>
+      </div>
+      <div class="credential-card">
+        <div class="icon">📘</div>
+        <div><h4>Published Author</h4><p>"The Power of Belief" — a book on mindset and leadership, available on Amazon India.</p></div>
+      </div>
+      <div class="credential-card">
+        <div class="icon">🤖</div>
+        <div><h4>AI &amp; ESG Governance Voice</h4><p>Active thought-leadership series on LinkedIn since June 2026, connecting AI regulation to operational reality.</p></div>
+      </div>
+      <div class="credential-card">
+        <div class="icon">🏆</div>
+        <div><h4>Sprinklr Practitioner Mastery</h4><p>Platform and product-delivery governance certification, earned in role.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="competencies" id="expertise">
+  <div class="wrap">
+    <span class="eyebrow">Core Competencies</span>
+    <h2 class="section-title">Board-Ready Expertise</h2>
+    <p class="section-lead">Operational experience, not theory — each area below is grounded in something built, fixed, or governed at scale.</p>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="icon">🖥️</div>
+        <h3>Technology &amp; Digital Oversight</h3>
+        <p>22 years in enterprise SaaS and tech operations. Ran omni-channel digital transformation across chat, email, voice, and community for 2,500+ customers at Sprinklr.</p>
+      </div>
+      <div class="comp-card">
+        <div class="icon">📈</div>
+        <h3>Customer Risk &amp; Retention Governance</h3>
+        <p>Moved managed-services retention from ~80% to 90%+ on a $90–100M book by rebuilding delivery around value realisation. CSAT held at 9.5/10 across 13,500+ monthly tickets.</p>
+      </div>
+      <div class="comp-card">
+        <div class="icon">📋</div>
+        <h3>Operational Governance &amp; SLA Accountability</h3>
+        <p>Designed and ran SLA governance across 110+ support engineers and a 100-person partner team. Process manuals, escalation frameworks, and quality-audit systems built from scratch.</p>
+      </div>
+      <div class="comp-card">
+        <div class="icon">🤝</div>
+        <h3>Third-Party &amp; Vendor Risk Management</h3>
+        <p>Conceived and executed Sprinklr's first-ever outsourced support arrangement — onboarding, certification, and 90%+ SLA compliance delivered by Q2.</p>
+      </div>
+      <div class="comp-card">
+        <div class="icon">🧠</div>
+        <h3>AI &amp; Emerging Technology Risk</h3>
+        <p>Operational experience deploying AI-enabled support tools and omni-channel automation. Active thought leadership on AI governance for boards since June 2026.</p>
+      </div>
+      <div class="comp-card">
+        <div class="icon">👥</div>
+        <h3>Human Capital &amp; Succession</h3>
+        <p>Built and scaled delivery teams from zero at two organisations. Designed capability pathways and certification programmes for 150+ engineers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Career Journey</span>
+    <h2 class="section-title">22 Years of Operating &amp; Governance Impact</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dates">OCT 2019 – PRESENT</div>
+        <h3>Vice President — Technical Support, Managed Services &amp; Product Success</h3>
+        <div class="org">Sprinklr · Enterprise SaaS, US-listed, ₹5,000 crore+ revenue</div>
+        <ul>
+          <li>Governed a ₹500 crore-plus ARR product success book across 2,500+ enterprise customers in three geographies</li>
+          <li>13,500+ monthly support tickets tracked against CSAT (9.5/10), SLA (90%+), and ≈2-day TTR</li>
+          <li>Moved retention from ~80–85% to 90%+ via a retention-recovery programme rebuilt around value realisation</li>
+          <li>Designed and executed Sprinklr's first-ever outsourced support arrangement — a 100-person Cognizant team at 90%+ SLA by Q2</li>
+          <li>Presented commercial narrative directly to CROs, CDOs, and economic buyers; renewal at 110%, adoption at 70%+</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dates">JUL 2018 – OCT 2019</div>
+        <h3>Business Operations Manager (de facto Operations Head)</h3>
+        <div class="org">Unidolabs Technologies LLC · Managed Services Provider to Sprinklr, Bengaluru</div>
+        <ul>
+          <li>Built an entire managed services operation from zero — job descriptions, sourcing, onboarding, SOPs, SLA delivery</li>
+          <li>Maintained 90%+ product retention and 70%+ consumption across regulated verticals including banking</li>
+          <li>Operation later absorbed in-house by Sprinklr</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dates">MAR 2015 – JUL 2018</div>
+        <h3>Social Media Advisor &amp; Analytics Delivery Lead</h3>
+        <div class="org">Dell Technologies · Bengaluru Delivery Centre</div>
+        <ul>
+          <li>Real-time social listening, analytics, and actionable insight across Dell-owned channels globally</li>
+          <li>Built skill-based-routing and self-serve content programmes from analytics intelligence</li>
+          <li>Earned a Silver Award for real-time reporting during peak retail events (Black Friday, Cyber Monday)</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dates">MAY 2012 – DEC 2013</div>
+        <h3>Manager — Social CRM</h3>
+        <div class="org">BlueOcean Market Intelligence · Social Intelligence &amp; Digital Analytics, Bengaluru</div>
+        <ul>
+          <li>Conceptualised and operationalised the Social Media Effectiveness Index, ranking Fortune 500 brands before social measurement had an established playbook</li>
+          <li>Built an offshore delivery team end-to-end: recruitment, training, transition, live delivery</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dates">NOV 2003 – MAY 2012</div>
+        <h3>Operations Manager — Financial Services &amp; Technical Support</h3>
+        <div class="org">Dell Technologies · Bengaluru Delivery Centre</div>
+        <ul>
+          <li>Eight years in regulated Financial Services and Technical Support contact-centre operations</li>
+          <li>Managed up to 18 L2/SME resolution specialists; sustained SLA at 90%+ and CSAT at 85%+</li>
+          <li>Designed and delivered the THRIVE people-development programme</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="boardvalue" id="board-value">
+  <div class="wrap">
+    <span class="eyebrow">Board Value</span>
+    <h2 class="section-title">What I Bring to the Boardroom</h2>
+    <p class="section-lead">A customer-growth and digital-transformation lens on governance — scaling organisations, improving customer outcomes, and navigating complex stakeholder environments, with an emerging focus on responsible AI.</p>
+    <div class="bv-grid">
+      <div class="bv-col">
+        <h3>Sector &amp; Committee Fit</h3>
+        <div class="tag-row" style="margin-bottom:20px;">
+          <span class="tag">B2B SaaS</span>
+          <span class="tag">Enterprise Technology</span>
+          <span class="tag">Digital Platforms</span>
+          <span class="tag">Managed Services</span>
+          <span class="tag">FinTech</span>
+          <span class="tag">Customer Experience</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Strategy &amp; Transformation</span>
+          <span class="tag">Technology / Digital / AI</span>
+          <span class="tag">Risk Management</span>
+          <span class="tag">ESG / Sustainability</span>
+          <span class="tag">Customer &amp; Stakeholder Experience</span>
+        </div>
+      </div>
+      <div class="bv-col">
+        <h3>Board-Level Questions I Raise</h3>
+        <ul class="questions">
+          <li>Is our growth scalable, profitable and sustainable — or are we simply increasing volume?</li>
+          <li>Are technology investments creating measurable strategic advantage?</li>
+          <li>Where are we using AI, what risks does it introduce, and who is accountable?</li>
+          <li>Are customer value and retention treated as leading indicators of enterprise value?</li>
+          <li>Does the organisation have the leadership and operating model to execute the strategy?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="wrap">
+    <span class="eyebrow">Recognition &amp; Involvement</span>
+    <h2 class="section-title">Thought Leadership &amp; Community</h2>
+    <div class="recognition-grid">
+      <div class="rec-card">
+        <div class="icon">📘</div>
+        <div><h4>Published Author</h4><p>"The Power of Belief" — a book on mindset and leadership, available on Amazon India.</p></div>
+      </div>
+      <div class="rec-card">
+        <div class="icon">💡</div>
+        <div><h4>AI &amp; ESG Governance Series</h4><p>Ongoing LinkedIn content since June 2026 — a 20-post topic bank on customer operations governance, retention risk, and AI oversight for boards.</p></div>
+      </div>
+      <div class="rec-card">
+        <div class="icon">🧭</div>
+        <div><h4>Mentorship</h4><p>Active mentor to professionals across product, implementation, project management, and services functions.</p></div>
+      </div>
+      <div class="rec-card">
+        <div class="icon">🌐</div>
+        <div><h4>Communities</h4><p>IICA Alumni Network · NASSCOM · SaaSBoomi · iSpirt ProductNation · Women in SaaS India · ICSI Bengaluru Chapter</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu" id="education">
+  <div class="wrap">
+    <span class="eyebrow">Academic Credentials</span>
+    <h2 class="section-title">Education &amp; Certifications</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h4>IICA Independent Director Proficiency Certificate</h4>
+        <p>Ministry of Corporate Affairs / IICA — Qualified, July 2026. IICA Data Bank registered (Lifetime).</p>
+      </div>
+      <div class="edu-card">
+        <h4>PGDHRM — Human Resources Management</h4>
+        <p>Narsee Monjee Institute of Management Studies, Bengaluru, 2006</p>
+      </div>
+      <div class="edu-card">
+        <h4>B.E. — Computer Science &amp; Engineering</h4>
+        <p>Jorhat Engineering College (Dibrugarh University), Assam, 2002</p>
+      </div>
+      <div class="edu-card">
+        <h4>Sprinklr Practitioner Mastery Certification</h4>
+        <p>Sprinklr University — product delivery and platform governance certification, earned in role.</p>
+      </div>
+      <div class="edu-card">
+        <h4>Digital Marketing Certification</h4>
+        <p>Industry-recognised digital marketing and analytics credential.</p>
+      </div>
+      <div class="edu-card">
+        <h4>Finance for Directors <em>(In Progress)</em></h4>
+        <p>Covering audit committee responsibilities, financial statement analysis, and going-concern risk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Let's Connect</span>
+    <h2 class="section-title">Ready to Collaborate</h2>
+    <p class="section-lead">Open to board roles, advisory engagements, and thought-leadership conversations across SaaS, enterprise technology, and managed services.</p>
+    <div class="contact-row">
+      <div class="contact-item">
+        <span class="k">Email</span>
+        <a href="mailto:aayantika@gmail.com">aayantika@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="k">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/aayantika/" target="_blank" rel="noopener">linkedin.com/in/aayantika</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Aayantika Choudhury · Aspiring Independent Director · IICA Certified · Bengaluru, Karnataka
+</footer>
+
+</body>
+</html>
